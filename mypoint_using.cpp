@@ -1,4 +1,4 @@
-﻿#include "mypoint_useing.h"
+﻿#include "mypoint_using.h"
 #include <vector>
 #include <cstring>
 #include <iostream>

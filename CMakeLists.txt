@@ -9,4 +9,8 @@ add_executable(untitled main.cpp
         MyStack.h
         MyStack.cpp
         MyStruct.h
-        MyStruct.cpp)
+        MyStruct.cpp
+        Union_And_Enum.h
+        Union_And_Enum.cpp
+        mypoint_using.h
+        mypoint_using.cpp)

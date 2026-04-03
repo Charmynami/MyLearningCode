@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-#include "mypoint_useing.h"
+#include "mypoint_using.h"
 #include "MyStruct.h"
 #include "Mystring.h"
 #include "Union_And_Enum.h"
