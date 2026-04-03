@@ -6,8 +6,4 @@
 #define UNTITLED_MYSTRING_H
 void mystring1();
 void mystring2();
-void mystring3();
-
-
-
 #endif //UNTITLED_MYSTRING_H

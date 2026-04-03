@@ -6,5 +6,5 @@
 #define UNTITLED_MYSTRUCT_H
 void mystruct1();
 void mystruct2();
-void mystruct3();
+
 #endif //UNTITLED_MYSTRUCT_H
