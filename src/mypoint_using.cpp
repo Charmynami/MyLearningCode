@@ -1,4 +1,4 @@
-﻿#include "mypoint_using.h"
+﻿#include "../MyInclude/mypoint_using.h"
 #include <vector>
 #include <cstring>
 #include <iostream>
@@ -223,4 +223,38 @@ void my_vector_using() {
     cin >> i;
     vector<double> d(i);//创建一个vector对象d，d是一个动态数组，可以存放double类型数据，大小为i
     //这样可以动态的创建数组，不需要提前定义数组的大小。
+}
+
+
+
+//const修饰指针的三种情况
+//1.const修饰指针：const int *p;//p是一个指向int的常量指针，p可以指向任意int类型的变量，但是不能修改p指向的变量的值。
+//2.const修饰指针指向的变量：int * const p=&a;//p是一个指向a的指针，p不能指向其他的int 变量的地址，但是p可以修改p指向的变量的值。
+//3.const修饰指针指向的变量和指针本身：const int * const p;//p是一个指向int的常量指针，p不能修改p的指向，p可以指向任意int类型的变量，但是不能修改p指向的变量的值。
+void mypoint_const1() {
+    //1.const修饰指针：指向可变，指向的变量的值不可变
+    const int *p;
+    int a = 10;
+    p = &a;
+    cout << "a=" << a << endl;
+    cout << "*p=" << *p << endl;
+    //*p = 20; //错误，不能修改p指向的变量的值
+
+    cout << "change p to point b"<<endl;//修改p指向的变量
+    int b = 20;
+    p = &b;
+    cout << "b=" << b << endl;
+    cout << "*p=" << *p << endl;
+    //2.const修饰指针指向的变量：指向不可变，指向的变量的值可变
+    int c = 30;
+    int * const p1 = &c;
+    cout << "c=" << c << endl;
+    cout << "*p1=" << *p1 << endl;
+    cout<<"change p1 's value"<<endl;
+    *p1=33;
+    cout << "c=" << c << endl;
+    //3.const修饰指针指向的变量和指针本身：指向不可变，指向的变量的值不可变，指针本身不可变
+    const int * const p2 = &a;
+    cout << "a=" << a << endl;
+    cout << "*p2=" << *p2 << endl;
 }

@@ -1,4 +1,4 @@
-﻿#include "Mystring.h"
+﻿#include "../MyInclude/Mystring.h"
 #include <iostream>
 using namespace std;
 //结构的定义

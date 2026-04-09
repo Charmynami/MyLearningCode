@@ -1,4 +1,4 @@
-﻿#include "Union_And_Enum.h"
+﻿#include "../MyInclude/Union_And_Enum.h"
 #include <iostream>
 using namespace std;
 //联合的使用：你能够定义多种数据类型，但是这个结构只能存储一种数据。
